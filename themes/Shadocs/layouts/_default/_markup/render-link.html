@@ -1,5 +1,0 @@
-{{$simpleLink := true}}
-{{with (findRE "<img.*>" .Text)}}
-  {{$simpleLink = false}}
-{{end}}
-<a href='{{with index .Page.Site.Params .Destination}}{{.}}{{else}}{{.Destination | safeURL | relLangURL}}{{end}}'{{with .Title}} title='{{.}}' id='{{. | anchorize}}'{{end}}{{with $simpleLink}} class='is-pretty-link'{{end}}>{{.Text | safeHTML}}</a>
