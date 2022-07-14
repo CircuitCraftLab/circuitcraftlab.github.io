@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>documentation - Category - CircuitCraftLab</title>
+        <title>documentation - Категория - CircuitCraftLab</title>
         <link>https://circuitcraftlab.github.io/categories/documentation/</link>
-        <description>documentation - Category - CircuitCraftLab</description>
+        <description>documentation - Категория - CircuitCraftLab</description>
         <generator>Hugo -- gohugo.io</generator><language>ru</language><managingEditor>selutin.anton@yandex.ru (YOUASSBEE)</managingEditor>
             <webMaster>selutin.anton@yandex.ru (YOUASSBEE)</webMaster><lastBuildDate>Fri, 06 Mar 2020 21:29:01 &#43;0800</lastBuildDate><atom:link href="https://circuitcraftlab.github.io/categories/documentation/" rel="self" type="application/rss+xml" /><item>
     <title>Theme Documentation - Basics</title>

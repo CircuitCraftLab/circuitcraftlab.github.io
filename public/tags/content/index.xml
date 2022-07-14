@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>content - Tag - CircuitCraftLab</title>
+        <title>content - Тэг - CircuitCraftLab</title>
         <link>https://circuitcraftlab.github.io/tags/content/</link>
-        <description>content - Tag - CircuitCraftLab</description>
+        <description>content - Тэг - CircuitCraftLab</description>
         <generator>Hugo -- gohugo.io</generator><language>ru</language><managingEditor>selutin.anton@yandex.ru (YOUASSBEE)</managingEditor>
             <webMaster>selutin.anton@yandex.ru (YOUASSBEE)</webMaster><lastBuildDate>Thu, 05 Mar 2020 15:58:26 &#43;0800</lastBuildDate><atom:link href="https://circuitcraftlab.github.io/tags/content/" rel="self" type="application/rss+xml" /><item>
     <title>Theme Documentation - Content</title>

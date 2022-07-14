@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Markdown - Category - CircuitCraftLab</title>
+        <title>Markdown - Категория - CircuitCraftLab</title>
         <link>https://circuitcraftlab.github.io/categories/markdown/</link>
-        <description>Markdown - Category - CircuitCraftLab</description>
+        <description>Markdown - Категория - CircuitCraftLab</description>
         <generator>Hugo -- gohugo.io</generator><language>ru</language><managingEditor>selutin.anton@yandex.ru (YOUASSBEE)</managingEditor>
             <webMaster>selutin.anton@yandex.ru (YOUASSBEE)</webMaster><lastBuildDate>Sun, 01 Dec 2019 21:57:40 &#43;0800</lastBuildDate><atom:link href="https://circuitcraftlab.github.io/categories/markdown/" rel="self" type="application/rss+xml" /><item>
     <title>Basic Markdown Syntax</title>

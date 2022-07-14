@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>All Posts - CircuitCraftLab</title>
+        <title>Все Статьи - CircuitCraftLab</title>
         <link>https://circuitcraftlab.github.io/posts/</link>
-        <description>All Posts | CircuitCraftLab</description>
+        <description>Все Статьи | CircuitCraftLab</description>
         <generator>Hugo -- gohugo.io</generator><language>ru</language><managingEditor>selutin.anton@yandex.ru (YOUASSBEE)</managingEditor>
             <webMaster>selutin.anton@yandex.ru (YOUASSBEE)</webMaster><lastBuildDate>Wed, 13 Jul 2022 23:29:51 &#43;0300</lastBuildDate><atom:link href="https://circuitcraftlab.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Theme Documentation - Basics</title>
