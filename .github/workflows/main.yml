@@ -1,44 +1,43 @@
-name: 'Hugo Publish'
-description: 'Github action to deploy Hugo blog which preserves the history and keeps commit messgages on partiy with the publishing branch'
-author: 'avi'
+name: Build, Test and Deploy the website
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+concurrency: deploy
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout repo
+        uses: actions/checkout@v3
         with:
           submodules: true
           fetch-depth: 0
 
-      - name: install hugo
+      - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
 
-      - name: clean up
-        run: |
-          if [ -d "public" ]; then
-            rm -rf public
-          fi
-      - name: setup
-        id: vars
-        run: |
-          echo "::set-output name=commit_msg::$(git log -1 --pretty=%B)"
-          git worktree add public gh-pages
-      - name: build
-        run: hugo --minify
+      - name: Build site with Hugo
+        run: hugo --minify --enableGitInfo
 
-      - name: commit
-        run: |
-          cd public
-          git config user.name "${GITHUB_ACTOR}"
-          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          if [ "`git status -s`" ]
-          then
-            git add --all
-            git commit -am "deployed: ${{ steps.vars.outputs.commit_msg }}"
-          fi     
-      - name: deploy
-        run: git push --all
+      - name: Check HTML
+        uses: chabad360/htmlproofer@master
+        with:
+          directory: "./public"
+          arguments: --only-4xx --check-favicon --check-html --assume-extension --empty-alt-ignore --disable-external
+        continue-on-error: ${{ github.event_name == 'push' }}
+
+      - name: Deploy to GitHub Pages
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
