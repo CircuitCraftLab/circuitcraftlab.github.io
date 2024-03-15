@@ -108,7 +108,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # ["sha256", "sha384", "sha512", "md5"]
   fingerprint = ""
   # LoveIt NEW | 0.2.0 date format
-  dateFormat = "2006-01-02"
+  dateFormat = "02-01-2006"
   # website title for Open Graph and Twitter Cards
   title = "CircuitCraftLab"
   # website description for RSS, SEO, Open Graph and Twitter Cards
@@ -141,7 +141,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # LoveIt NEW | 0.2.0 Custom content (HTML format is supported)
     custom = ''
     # LoveIt NEW | 0.2.0 whether to show Hugo and theme info
-    hugo = true
+    hugo = false
     # LoveIt NEW | 0.2.0 whether to show copyright info
     copyright = true
     # LoveIt NEW | 0.2.0 whether to show the author
@@ -158,7 +158,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # special amount of posts in each section page
     paginate = 20
     # date format (month and day)
-    dateFormat = "01-02"
+    dateFormat = "02-01"
     # amount of RSS pages
     rss = 10
 
@@ -167,7 +167,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # special amount of posts in each list page
     paginate = 20
     # date format (month and day)
-    dateFormat = "01-02"
+    dateFormat = "02-01"
     # amount of RSS pages
     rss = 10
 
@@ -194,7 +194,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # max index length of the chunked content
     contentLength = 4000
     # placeholder of the search bar
-    placeholder = ""
+    placeholder = "Input text"
     # LoveIt NEW | 0.2.1 max number of results length
     maxResultLength = 10
     # LoveIt NEW | 0.2.3 snippet length of the result
@@ -323,9 +323,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # LoveIt NEW | 0.2.0 whether to hide a page from search results
     hiddenFromSearch = false
     # LoveIt NEW | 0.2.0 whether to enable twemoji
-    twemoji = false
+    twemoji = true
     # whether to enable lightgallery
-    lightgallery = false
+    lightgallery = true
     # LoveIt NEW | 0.2.0 whether to enable the ruby extended syntax
     ruby = true
     # LoveIt NEW | 0.2.0 whether to enable the fraction extended syntax
@@ -382,15 +382,15 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # LoveIt CHANGED | 0.2.0 social share links in post page
     [params.page.share]
       enable = true
-      Twitter = false
+      Twitter = true
       Telegram = true
-      Facebook = false
-      Linkedin = false
-      Whatsapp = false
-      Pinterest = false
+      Facebook = true
+      Linkedin = true
+      Whatsapp = true
+      Pinterest = true
       Tumblr = false
       HackerNews = false
-      Reddit = false
+      Reddit = true
       VK = true
       Buffer = false
       Xing = false
@@ -398,12 +398,12 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       Instapaper = false
       Pocket = false
       Flipboard = false
-      Weibo = false
-      Blogger = false
-      Baidu = false
-      Odnoklassniki = false
+      Weibo = true
+      Blogger = true
+      Baidu = true
+      Odnoklassniki = true
       Evernote = false
-      Skype = false
+      Skype = true
       Trello = false
       Mix = false
     # LoveIt CHANGED | 0.2.0 Comment config
