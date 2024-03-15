@@ -6,12 +6,6 @@ draft: false
 author: "YOUASSBEE"
 description: "Статья о том как корпорасты помогают другим корпорастам отнимать деньги у народа и как с этим бороться"
 
-resources:
-- name: "J-Link"
-  src: "J-Link.png"
-- name: "TC2050"
-  src: "TC2050.png"
-  
 tags: ["J-Link", "Железо", "Программатор", "USB", "ARM"]
 categories: ["Лайфхаки"]
 
