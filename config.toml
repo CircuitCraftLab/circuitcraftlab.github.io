@@ -456,8 +456,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # LoveIt NEW | 0.2.0 Telegram comments config
       [params.page.comment.telegram]
         enable = true
-        siteID = ""
-        limit = 5
+        siteID = "Zkr9T6l1"
+        limit = 10
         height = ""
         color = ""
         colorful = true
